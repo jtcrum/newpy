@@ -42,7 +42,7 @@ def add_back_atoms(ax,labels,reference,angles):
     circle = [0,1.8]
 
     for i,angle in enumerate(angles):
-        angle = radians(360-reference+angle)
+        angle = radians(360-angle+reference)
         p1,p2,newc = rotate(bottom,top,circle,angle)
         xvals = [p1[0],p2[0]]
         yvals = [p1[1],p2[1]]
